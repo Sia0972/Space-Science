@@ -1,192 +1,73 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
-@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
-#space, .stars {
-overflow: hidden;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-} 
-
-.stars { background-image: 
-radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-radial-gradient(2px 2px at 50px 160px, #eee, rgba(0,0,0,0)),
-radial-gradient(2px 2px at 90px 40px, #eee, rgba(0,0,0,0)),
-radial-gradient(2px 2px at 130px 80px, #eee, rgba(0,0,0,0)),
-radial-gradient(2px 2px at 160px 120px, #eee, rgba(0,0,0,0));
-background-repeat: repeat;
-background-size: 200px 200px;
-animation: zoom 5s infinite;
-opacity: 0;
-} 
-
-.stars:nth-child(1) {
-background-position: 50% 50% ;
-animation-delay: 0s;
-} 
-
-.stars:nth-child(2) {
-background-position: 20% 60%;
-animation-delay: 1s;
-} 
-
-.stars:nth-child(3) {
-background-position: -20% -30%;
-animation-delay: 2s;
-} 
-
-.stars:nth-child(4) {
-background-position: 40% -80%;
-animation-delay: 3s;
-} 
-
-.stars:nth-child(5) {
-background-position: -20% 30%;
-animation-delay: 4s;
-} 
-
-@keyframes zoom {
-0% {
-opacity: 0;
-transform: scale(0.5);
-animation-timing-function:ease-in;
-}
-85% {
-opacity: 1;
-transform: scale(2.8);
-animation-timing-function: linear;
-}
-100% {
-opacity: 0;
-transform: scale(3.5);
-}
-} 
-
-body {
-background: #000;
-font-family: 'orbitron', sans-serif;
-} 
-
-  h1 {
-    z-index: 1;
-    margin: -1.5em -2.5em;
-    text-size: 0.8em;
-    width: 20em; /* Adjusted width */
-    color: blue;
-    text-shadow: 0 0 3px blue;
-    position: absolute; 
-    left: 100px; 
-    top: 400px;
-  }
-  h2 {
-    z-index: 1;
-    margin: -1.5em -2.5em;
-    text-size: 1em;
-    width: 30em; /* Adjusted width */
-    color: blue;
-    text-shadow: 0 0 3px blue;
-    position: absolute; 
-    left: 180px; 
-    top: 500px;
+  body, html {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    font-family: Orbitation, Arial, sans-serif;
+    color:saddlebrown;
+    background-image: url('how it all began.jpg'); /* Update with your actual folder and image name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  h3 {
-    z-index: 1;
-    margin: -1.5em -2.5em;
-    text-size: 1em;
-    width: 39em; /* Adjusted width */
-    color: blue;
-    text-shadow: 0 0 3px blue;
-    position: absolute; 
-    left: 160px; 
-    top: 1800px;
-  }
 
-/* Properly close the <style> tag */
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Adjusted letter-spacing unit */
+  font-size: 2em; /* Converted font-size to relative unit for scalability */
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  text-transform: none; /* Removed lowercase transformation */
+  font-size: 1em; /* Converted font-size to relative unit for scalability */
+  font-weight: normal; /* Set font-weight to 'normal' */
+  max-width: 100%; /* Changed width to 'max-width' for better responsiveness */
+  margin: 0 auto; /* Center align paragraphs */
+  display: block; /* Set display to 'block' for normal rendering */
+}
 </style>
-</head>
-<body>
-  <div class="header" data-aos="fade-down" style="position: relative; text-align: center;">
-      <!-- Links positioned absolutely over the image with added margin -->
-   <div> <a href="#home" style="position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); margin-right: 10px;">Home</a>
-     <a href="#space" style="position: absolute; top: 50%; left: 70%; transform: translate(-50%, -50%); margin-right: 10px;">Space</a>
-     <a href="#about" style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%);">About Us</a>
-    </div>
-    <h1> The Universe</h1>
-    <h2> The universe, an infinite expanse of cosmic wonder, beckons with mysteries yet unraveled and realms unexplored. Within its vast tapestry of stars, galaxies, and nebulae, lies the captivating dance of celestial bodies, </h2>
-  <h3>  each a testament to the boundless creativity of the cosmos.From the fiery birth of stars to the enigmatic depths of black holes,it unveils a spectacle of breathtaking beauty and unfathomable complexity,inviting humanity to gaze upon its wonders and ponder the secrets it holds.</h3>
-      <!-- The image -->
-      <img src="up.png" style="max-width: 100%; max-height: 100%; display: block;" alt="Header Image">
-    <img src="logo.png" style="position: absolute; top: 100px; left: 80px; height: 100px; width: 150px;">
 
+<div id="table">
+  <div id="centeralign">
+    <h1>"HOW IT ALL BEGAN"</h1>
+    <p>
+      In the vast expanse of nothingness, where silence reigned supreme, a mysterious tale unfolded. Imagine a canvas, blank and untouched, yearning for a creator's hand. Within this cosmic void, a whisper emerged, soft yet potent, heralding the dawn of creation. From the depths of emptiness emerged a tiny spark, pulsating with unfathomable energy. It was the genesis, the birth of space itself. With a magnificent burst, reality tore asunder, giving birth to galaxies, stars, and planets. Thus, amidst the cosmic symphony, space began its timeless journey, an enigma waiting to be explored, a story waiting to be told.</p>
   </div>
-<div id="space">
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
 </div>
-<div class="wrapper">
-<div class="typing-demo">
-this is learning a
-</div>
-  <!-- <div>
-  <img src="center.png" style="max-width:100%;max-height:100%;" alt="Description of the image">
-  </div> -->
-  
-  <div>
-  <img src="1.png" style="max-width:100%;max-height:100%;" alt="Description of the image">
-  </div>
-<div> <p> what is Space</p>
-</div>
-
-  
-<!-- Images up1 and up2 aligned horizontally -->
-  <div style="display: flex; justify-content:space-evenly; ">
-    <a href="need more space.html" hidden></a>
-  <img src="need more space.png" style="width: 200px; height: 200px;">
-      <a href="look up.html" hidden></a>
-<img src="look up.png" style="width: 200px; height: 200px;">
-    </div>
-
-    </div>
-
-  </div> 
-<!-- Adding the down images in the center -->
-  <div style="display: flex; justify-content: center;">
-    <a href="how it all began.html" hidden></a>
-    <img src="how it all began.png" style="width: 200px; height: 200px;">
-  </div>
-
-  <div style="display: flex; justify-content:space-evenly;">
-    <a href="no perfection.html" hidden></a>
-    <img src="no perfection.png" style="width: 200px; height: 200px;">
-
-    <a href="little Astronauts.html" hidden></a>
-  <img src="little astronauts.png" style="width: 200px; height: 200px;">
-  </div>
-  </div>
-  <div>
-  <img src="2.png" style="max-width:100%;max-height:100%;" alt="Description of the image">
-  </div>
-<!-- End of Adding the down images in the center -->
-
-   <footer>
-     <div class="header" data-aos="fade-up" style="text-align: center;">
-     <a href="#home">copy right reserved 2023</a>
-        <img src="down.png" style="max-width: 100%; max-height: 100%;" alt="Header Image">
-    </div>
-      </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 <script>
-AOS.init();
-</script>
-</body>
-</html>
+function typeEffect(element, speed) {
+  var text = element.innerHTML;
+  element.innerHTML = "";
+
+  var i = 0;
+  var timer = setInterval(function() {
+    if (i < text.length) {
+      element.append(text.charAt(i));
+      i++;
+    } else {
+      clearInterval(timer);
+    }
+  }, speed);
+}
+
+
+// application
+var speed = 75;
+var h1 = document.querySelector('h1');
+var p = document.querySelector('p');
+var delay = h1.innerHTML.length * speed + speed;
+
+// type affect to header
+typeEffect(h1, speed);
+
+
+// type affect to body
+setTimeout(function(){
+  p.style.display = "inline-block";
+  typeEffect(p, speed);
+}, delay);
+</script> 
